@@ -4,7 +4,7 @@
  * @author: shic
  * @date: 2019-05-20 15:53
  */
-package com.example.config.shiro;
+package com.demo.config.shiro;
 
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;

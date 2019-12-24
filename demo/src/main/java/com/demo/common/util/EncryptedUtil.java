@@ -4,7 +4,7 @@
  * @author: shic
  * @date: 2019-05-20 10:47
  */
-package com.example.common.util;
+package com.demo.common.util;
 
 import org.apache.shiro.codec.Hex;
 

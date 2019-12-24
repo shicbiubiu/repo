@@ -4,7 +4,7 @@
  * @author: shic
  * @date: 2019-04-21 15:55
  */
-package com.example.config.shiro;
+package com.demo.config.shiro;
 
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
