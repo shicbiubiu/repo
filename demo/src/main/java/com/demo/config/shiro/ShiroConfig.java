@@ -18,6 +18,7 @@ import java.util.Map;
 @Configuration
 public class ShiroConfig {
 
+    //对shiro进行一些配置，如登录路径、权限验证、密码匹配等等
     @Bean
     public ShiroFilterFactoryBean shirFilter(SecurityManager securityManager) {
         System.out.println("ShiroConfiguration.shirFilter() start...........");
@@ -36,7 +37,6 @@ public class ShiroConfig {
         shiroFilterFactoryBean.setLoginUrl("/login");
         // 登录成功后要跳转的链接
         shiroFilterFactoryBean.setSuccessUrl("/index");
-
         //未授权界面;
         shiroFilterFactoryBean.setUnauthorizedUrl("/403");
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap);
@@ -55,5 +55,4 @@ public class ShiroConfig {
         securityManager.setRealm(myShiroRealm());
         return securityManager;
     }
-
 }

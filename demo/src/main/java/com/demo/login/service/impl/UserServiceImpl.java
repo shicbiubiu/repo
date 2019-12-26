@@ -35,21 +35,50 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserRoleMapper userRoleMapper;
 
+    /**
+     * @Author shichuang
+     * @Description 根据用户id查询用户所有角色
+     * @Date 2019/12/24
+     * @Param [userId]
+     * @return java.util.List<com.demo.login.pojo.Role>
+     **/
     @Override
     public List<Role> findRoles(String userId) {
+
         return null;
     }
 
+    /**
+     * @Author shichuang
+     * @Description 根据用户id查询用户权限
+     * @Date 2019/12/24 根据用户id查询用户权限
+     * @Param [userId]
+     * @return java.util.List<com.demo.login.pojo.Permission>
+     **/
     @Override
     public List<Permission> findPermission(String userId) {
         return null;
     }
 
+    /**
+     * @Author shichuang
+     * @Description 根据用户id查询用户信息
+     * @Date 2019/12/24
+     * @Param [userId]
+     * @return com.demo.login.pojo.User
+     **/
     @Override
     public User findUserByUserId(String userId) {
         return null;
     }
 
+    /**
+     * @Author shichuang
+     * @Description 分配默认用户角色权限
+     * @Date 2019/12/24
+     * @Param [user]
+     * @return int
+     **/
     @Override
     public int assignDefaultUserRolePermission(User user) {
         return 0;
